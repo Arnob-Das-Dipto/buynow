@@ -1,0 +1,315 @@
+
+/* 
+    Template Name: E-commerce Project
+    Author Name: Arnob Das Dipto
+    Description: Using HTML, CSS, JQUERY, JAVA-SCRIPT
+
+    Index 
+
+    ----
+    01. Reset CSS
+    02. Header CSS
+    03. Banner CSS
+    04. Home-Top CSS
+        (i) Features CSS
+        (ii) Category CSS
+        (iii) Product CSS
+        (iv) Discount CSS
+    05. Footer CSS
+*/
+
+/* 01. Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 400;
+    background-image: url('../img/body-bg/body-bg.jpg');
+    background-size: cover;
+    background-position: center; 
+} 
+.btn {
+    background-color: #f9236f;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    display: inline-block;
+    transition: .3s;
+}
+.btn:hover {
+    background-color: #333;
+}
+
+/* 02. Header CSS */
+.header-area {
+    padding: 20px 0;
+    transition: .3s;
+}
+.header-area.sticky {
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	background-color: #f4f4f4;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.logo {
+    font-weight: 700;
+    font-size: 26px;
+    color: #333;
+} 
+.header ul {
+    list-style: none;
+    display: flex;
+}
+.header ul li a {
+    margin: 0 10px;
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .3s;
+}
+.header ul li a:hover {
+    color: #f9236f;
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.social-icon a {
+    color: #333;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+/* 03. Banner CSS */
+.bannar-area {
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    position: relative;
+}
+.bannar-area:after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/banner-model/banner-model.png');
+    width: 50%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+.bannar-content {
+    width: 700px;
+    text-align: center;
+}
+.bannar-content h1 {
+    font-size: 140px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.bannar-content h1 span {
+    color: #f9236f;
+}
+.bannar-content h4 {
+    font-size: 60px;
+    letter-spacing: 90px;
+    margin: 35px 0;
+}
+.bannar-content p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 04. Home-Top CSS */
+.home-top {
+    padding: 40px 25px;
+    background-color: #fff;
+    margin-top: -70px;
+    position: relative;
+    z-index: 9;
+}
+
+/* 04. (i) Features CSS */
+.features {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.single-feature {
+    flex-basis: 32%;
+}
+.single-feature i {
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.single-feature h4 {
+    font-size: 26px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.single-feature p {
+    font-weight: 500;
+}
+
+/* 04. (ii) Category CSS */
+.cats {
+    margin: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single-cat {
+    flex-basis: 49%;
+    padding: 60px;
+    background-size: cover;
+    background-position: top right;
+}
+.single-cat h4 {
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.single-cat h4 span {
+    font-size: 46px;
+    color: #f9236f;
+}
+.single-cat p {
+    max-width: 250px;
+    margin-top: 20px;
+    text-shadow: 1px 2px 5px #333;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* 04. (iii) Product CSS */
+.products-area h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.single-product {
+    flex-basis: 24%;
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.single-product h4 {
+    text-align: left;
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.single-product h4 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 10px;
+}
+.single-product p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* 04. (iv) Discount CSS */
+.advertise {
+    text-align: center;
+    padding: 60px;
+    background-size: cover;
+}
+.advertise h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+/* 05. Footer CSS */
+.footer-area {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #fff;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.single-footer:nth-child(1) {
+    flex-basis: 30%;
+}
+.single-footer:nth-child(4) {
+    flex-basis: 25%;
+}
+.single-footer h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.single-footer p {
+    margin-bottom: 15px;
+}
+.single-footer span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.single-footer ul {
+    list-style: none;
+}
+.single-footer ul li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.single-footer ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    text-transform: capitalize;
+}
+.copy {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin-top: 30px;
+} 
